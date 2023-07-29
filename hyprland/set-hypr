@@ -84,6 +84,7 @@ install_stage=(
     flatpak
     ranger
     neovim
+    lagrange
 )
 
 for str in ${myArray[@]}; do
