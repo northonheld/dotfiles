@@ -85,6 +85,15 @@ install_stage=(
     ranger
     neovim
     lagrange
+    awscli-bin
+    azure-cli
+    k9s
+    stern
+    helm
+    tig
+    vault
+    flameshot
+    rpi-imager
 )
 
 for str in ${myArray[@]}; do
