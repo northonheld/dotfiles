@@ -40,11 +40,11 @@ nvidia_stage=(
 #the main packages
 install_stage=(
     kitty 
-    mako 
-    waybar
-    swww 
-    swaylock-effects 
-    wofi 
+    mako # notificação
+    waybar # Bar de cima 
+    swww # Wallpaper controler
+    swaylock-effects # A fancier screen locker for Wayland.
+    wofi # launcher/menu - é o buscador
     wlogout 
     xdg-desktop-portal-hyprland 
     swappy 
