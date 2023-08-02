@@ -13,7 +13,7 @@ prep_stage=(
     qt5-wayland 
     qt5ct
     qt6-wayland 
-    qt6ct
+    qt6ct # ver como installar no nix depois
     qt5-svg
     qt5-quickcontrols2
     qt5-graphicaleffects
@@ -67,11 +67,11 @@ install_stage=(
     file-roller
     starship 
     papirus-icon-theme 
-    ttf-jetbrains-mono-nerd 
+    ttf-jetbrains-mono-nerd # ver como installar no nix depois
     noto-fonts-emoji 
     lxappearance 
     xfce4-settings
-    nwg-look-bin
+    nwg-look-bin # ver como installar no nix depois
     sddm
     tor
     tor-browser
@@ -80,7 +80,7 @@ install_stage=(
     tox
     qtox
     hexchat
-    hexchat-otr
+    hexchat-otr # ver como installar no nix depois
     flatpak
     ranger
     neovim
