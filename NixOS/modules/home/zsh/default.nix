@@ -10,7 +10,7 @@
     enableSyntaxHighlighting = true;
     oh-my-zsh = {
         enable = true;
-        plugins = [ "git", "kubectl", "kubectx", "emoji" "encode64", "terraform", "aws", "zsh-autosuggestions", "zsh-syntax-highlighting", "golang", "python" ];
+        plugins = [ "git" "kubectl" "kubectx" "emoji" "encode64" "terraform" "aws" "zsh-autosuggestions" "zsh-syntax-highlighting" "golang" "python" ];
     
     };
     shelles = {
