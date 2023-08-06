@@ -13,7 +13,7 @@
         plugins = [ "git" "kubectl" "kubectx" "emoji" "encode64" "terraform" "aws" "zsh-autosuggestions" "zsh-syntax-highlighting" "golang" "python" ];
     
     };
-    shelles = {
+    shellAliases = {
         n = "clear && neofetch";
         v = "nvim";
         #record = "wf-recorder --audio=alsa_output.pci-0000_08_00.6.analog-stereo.monitor -f $HOME/Videos/$(date +"%Y%m%d%H%M%S_1.mp4")";
