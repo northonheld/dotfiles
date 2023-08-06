@@ -55,12 +55,7 @@
       enable = true;
       user = "notheld";
     };
-    libinput = {
-      enable = true;
-      mouse = {
-        accelProfile = "flat";
-      };
-    };
+
 
   #OpenGL
   hardware = {
