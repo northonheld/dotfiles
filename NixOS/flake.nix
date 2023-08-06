@@ -17,17 +17,16 @@
     };
   };
 
-  outputs = inputs @ {
-    self,
-    nixpkgs,
-    ...
-  }: {
-    nixosConfigurations = let
-      username = "notheld";
-      editor = "nvim";
-      browser = "firefox";
+  outputs =
+    { nixpkgs
+    , self
+    , ...
+    } @ inputs:
+    let
+      selfPkgs = import ./pkgs;
     in
     {
+      overlays.default = selfPkgs.overlay;
       nixosConfigurations = import ./modules/core/default.nix {
         inherit self nixpkgs inputs;
       };
