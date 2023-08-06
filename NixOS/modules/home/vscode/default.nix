@@ -13,7 +13,7 @@
       golang.go
       oderwat.indent-rainbow
       ms-kubernetes-tools.vscode-kubernetes-tools
-      adamhartford.vscode-base64
+      #adamhartford.vscode-base64
       hashicorp.terraform
     ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
       {
