@@ -16,7 +16,7 @@
     shelles = {
         n = "clear && neofetch";
         v = "nvim";
-        record = "wf-recorder --audio=alsa_output.pci-0000_08_00.6.analog-stereo.monitor -f $HOME/Videos/$(date +"%Y%m%d%H%M%S_1.mp4")";
+        #record = "wf-recorder --audio=alsa_output.pci-0000_08_00.6.analog-stereo.monitor -f $HOME/Videos/$(date +"%Y%m%d%H%M%S_1.mp4")";
         ani = "bash $HOME/.local/bin/anime --dub";
         ll = "exa --icons --long -lha";
         
