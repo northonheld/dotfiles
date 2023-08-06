@@ -99,8 +99,14 @@
   # services.xserver.libinput.enable = true;
 
   # XDG portal
-  xdg.portal.enable = true;
-  xdg.portal.extraPortals = [pkgs.xdg-desktop-portal-gtk];
+  xdg.portal = {
+    enable = true;
+    wlr.enable = true;
+    extraPortals = [
+      pkgs.xdg-desktop-portal-hyprland
+      # pkgs.xdg-desktop-portal-gtk
+    ];
+  };
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
@@ -134,14 +140,6 @@
   # Hyprland
   # programs.hyprland.enable = true;
   programs.hyprland.enable = true;
-  xdg.portal = {
-    enable = true;
-    wlr.enable = true;
-    extraPortals = [
-      pkgs.xdg-desktop-portal-hyprland
-      # pkgs.xdg-desktop-portal-gtk
-    ];
-  };
   
   security.polkit.enable = true;
   systemd = {
