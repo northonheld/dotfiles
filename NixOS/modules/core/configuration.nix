@@ -197,5 +197,5 @@
     enableSSHSupport = true;
     pinentryFlavor = "gtk2";
   };
-
+ };
 }
