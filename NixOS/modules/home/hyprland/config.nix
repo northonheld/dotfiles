@@ -66,15 +66,19 @@ in
 
 
       decoration {
-          rounding = 0
-          multisample_edges = true
-          blur_new_optimizations = 1
-          active_opacity = 0.8500;
-          inactive_opacity = 0.76;
-          blur = 1
-          blur_size = 2
-          blur_passes = 2
-          drop_shadow = 0
+          # See https://wiki.hyprland.org/Configuring/Variables/ for more
+      
+          rounding = 5
+          blur = yes
+          blur_size = 7
+          blur_passes = 4
+      
+          blurls = lockscreen
+      
+          drop_shadow = yes
+          shadow_range = 4
+          shadow_render_power = 3
+          col.shadow = rgba(1a1a1aee)
       }
 
       animations {
