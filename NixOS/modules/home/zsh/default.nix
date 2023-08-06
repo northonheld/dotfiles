@@ -71,8 +71,8 @@
         tff = "terraform fmt";
         #---------------------------------
         ## Alias repos
-        cdr = "cd ~/Documents/repos"
-        cdnix = "cd ~/Documents/dotfiles"
+        cdr = "cd ~/Documents/repos";
+        cdnix = "cd ~/Documents/dotfiles";
     };
   };
 }
