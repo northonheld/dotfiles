@@ -30,12 +30,6 @@
       options = "--delete-older-than 7d";
     };
   };
-  nixpkgs = {
-    overlays = [
-      self.overlays.default
-      inputs.nur.overlay
-    ];
-  };
 
   # Set your time zone.
   time.timeZone = "America/Sao_Paulo";
