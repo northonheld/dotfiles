@@ -48,13 +48,14 @@
   # Configure keymap in X11
   # services.xserver.layout = "us";
   # services.xserver.xkbOptions = "eurosign:e,caps:escape";
-  #services.xserver = {
-  #  enable = true;
-  #  layout = "us";
-  #  displayManager.autoLogin = {
-  #    enable = true;
-  #    user = "notheld";
-  #  };
+  services.xserver = {
+    enable = true;
+    layout = "us";
+    displayManager.autoLogin = {
+      enable = true;
+      user = "notheld";
+    };
+  };
 
 
   #OpenGL
