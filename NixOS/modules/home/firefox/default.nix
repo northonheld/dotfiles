@@ -60,14 +60,14 @@
             "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
             "browser.compactmode.show" = true;
           };
-          extensions = with pkgs.nurl.repos.rycee.firefox-addons; [
-            ublock-origin
-            # duckduckgo-privacy-essentials
-            languagetool
-            news-feed-eradicator
-            tabliss
-            videospeed
-          ];
+          #extensions = with pkgs.nurl.repos.rycee.firefox-addons; [
+          #  ublock-origin
+          #  # duckduckgo-privacy-essentials
+          #  languagetool
+          #  news-feed-eradicator
+          #  tabliss
+          #  videospeed
+          #];
           userChrome = builtins.readFile userChrome;
         };
       };
