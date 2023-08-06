@@ -9,7 +9,7 @@
       jnoortheen.nix-ide
       ms-python.vscode-pylance
       ms-python.python
-      ms-python.isort
+      #ms-python.isort
       golang.go
       oderwat.indent-rainbow
       ms-kubernetes-tools.vscode-kubernetes-tools
