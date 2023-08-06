@@ -12,7 +12,7 @@
     package = pkgs.swaylock-effects;
     settings = {
       daemonize
-      show-failed-attempts
+      show-failed-attempts=""
       clock
       screenshot
       effect-blur=9x5
