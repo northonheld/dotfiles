@@ -110,7 +110,7 @@ in
       bind = $mainMod, SPACE, exec, wofi # Show the graphical app launcher
       bind = $mainMod, P, pseudo, # dwindle
       bind = $mainMod, J, togglesplit, # dwindle
-      bind = $mainMod, S, exec, grim -g "$(slurp)" - | swappy -f - # take a screenshot
+      bind = $mainMod, S, exec, grimblast --notify --cursor  copy area
       bind = ALT, V, exec, cliphist list | wofi -dmenu | cliphist decode | wl-copy # open clipboard manager
       
       # screenshot
