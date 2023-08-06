@@ -46,6 +46,7 @@
     imv # A command line image viewer for tiling window managers
     bleachbit # A program to clean your computer
     qalculate-gtk # The ultimate desktop calculator
+    zsh # The Z shell
     
     # System Call Monitoring
     strace # A system call tracer for Linux
