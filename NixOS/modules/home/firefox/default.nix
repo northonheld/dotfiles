@@ -60,7 +60,7 @@
             "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
             "browser.compactmode.show" = true;
           };
-          extensions = with pkgs.nur.repos.rycee.firefox-addons; [
+          extensions = with pkgs.nurl.repos.rycee.firefox-addons; [
             ublock-origin
             # duckduckgo-privacy-essentials
             languagetool
