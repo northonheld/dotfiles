@@ -47,7 +47,8 @@
     bleachbit # A program to clean your computer
     qalculate-gtk # The ultimate desktop calculator
     zsh # The Z shell
-    
+    gnupg # Modern release of the GNU Privacy Guard, a GPL OpenPGP implementation
+
     # System Call Monitoring
     strace # A system call tracer for Linux
     ltrace # Library call tracer
