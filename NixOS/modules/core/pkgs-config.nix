@@ -48,6 +48,7 @@
     qalculate-gtk # The ultimate desktop calculator
     zsh # The Z shell
     gnupg # Modern release of the GNU Privacy Guard, a GPL OpenPGP implementation
+    dmidecode # A tool that reads insformation about your system's hardware from the BIOS according to the SMBIOS/DMI standard
 
     # System Call Monitoring
     strace # A system call tracer for Linux

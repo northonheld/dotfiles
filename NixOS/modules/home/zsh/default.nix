@@ -72,7 +72,7 @@
         #---------------------------------
         ## Alias repos
         cdr = "cd ~/Documents/repos";
-        cdnix = "cd ~/Documents/dotfiles";
+        cdnix = "cd ~/Documents/dotfiles/NixOS";
     };
   };
 }
