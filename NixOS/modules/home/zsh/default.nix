@@ -10,8 +10,13 @@
     enableSyntaxHighlighting = true;
     oh-my-zsh = {
         enable = true;
+        theme = "robbyrussell";
         plugins = [ "git" "kubectl" "kubectx" "emoji" "encode64" "terraform" "aws" "zsh-autosuggestions" "zsh-syntax-highlighting" "golang" "python" ];
     
+    };
+    history = {
+      size = 999999999;
+      path = "${config.xdg.dataHome}/zsh/history";
     };
     shellAliases = {
         n = "clear && neofetch";
