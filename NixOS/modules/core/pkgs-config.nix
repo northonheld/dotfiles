@@ -48,7 +48,7 @@
     qalculate-gtk # The ultimate desktop calculator
     zsh # The Z shell
     zsh-autosuggestions # Fish shell autosuggestions for Zsh
-    zsh-sytax-highlighting # FIsh shell like syntax highlightingfor Zsh
+    zsh-syntax-highlighting # FIsh shell like syntax highlightingfor Zsh
     zsh-powerlevel10k # a fast reimplementation of Powerlevel9k ZSH theme
     zsh-navigation-tools # # Curses-based tools for ZSH
     zsh-history # A CLI to provide enhanced history for your your ZSH shell
