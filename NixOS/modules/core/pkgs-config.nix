@@ -47,6 +47,12 @@
     bleachbit # A program to clean your computer
     qalculate-gtk # The ultimate desktop calculator
     zsh # The Z shell
+    zsh-autosuggestions # Fish shell autosuggestions for Zsh
+    zsh-sytax-highlighting # FIsh shell like syntax highlightingfor Zsh
+    zsh-powerlevel10k # a fast reimplementation of Powerlevel9k ZSH theme
+    zsh-navigation-tools # # Curses-based tools for ZSH
+    zsh-history # A CLI to provide enhanced history for your your ZSH shell
+    nix-zsh-completions # ZSH completions for Nix, NixOS, and NixOps
     gnupg # Modern release of the GNU Privacy Guard, a GPL OpenPGP implementation
     dmidecode # A tool that reads insformation about your system's hardware from the BIOS according to the SMBIOS/DMI standard
 
@@ -123,6 +129,7 @@
     qtox # Qt Tox client
     hexchat # A popular and easy to use graphical IRC (chat) client
     lagrange # A Beautiful Gemini/Gopher Client
+    mullvad-vpn # Client for Mullvad VPN
     
     # Cloud
     awscli # Unified tool to manage your AWS services
