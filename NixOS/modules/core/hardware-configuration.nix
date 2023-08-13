@@ -22,7 +22,17 @@
     { device = "/dev/disk/by-uuid/3757-5737";
       fsType = "vfat";
     };
+  
+  systemd.tmpfiles.rules =
+  [
+    "d /home/notheld/Data 700 notheld"
+  ] ;
 
+  fileSystems."/home/notheld/Data" = {
+      device = "192.168.15.6:/mnt/tank/my-data";
+      fsType = "nfs";
+      options = [ "x-systemd.automount" "noauto" "x-systemd.after=network-online.target" "x-systemd.mount-timeout=90" ];
+    };
   swapDevices =
     [ { device = "/dev/disk/by-uuid/fa157e84-045e-401b-ae8f-2e892591f8e8"; }
     ];
