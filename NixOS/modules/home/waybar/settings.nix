@@ -17,6 +17,7 @@
       modules-right = [
         "pulseaudio"
         "pulseaudio#microphone"
+        "battery"
         "memory"
         "cpu"
         "disk"
@@ -50,8 +51,21 @@
       };
       "wlr/workspaces" = {
         "format" = "{icon}";
+        "disable-scroll" = true;
+        "all-outputs" = true;
         "on-click" = "activate";
+        "persistent_workspaces" = {
+            "1" = [];
+            "2" = [];
+            "3" = [];
+            "4" = [];
+            "5" = []
+        }
       };
+      #"wlr/workspaces" = {
+      #  "format" = "{icon}";
+      #  "on-click" = "activate";
+      #};
       "pulseaudio" = {
         "scroll-step" = 5;
         "format" = "{icon} {volume}%";
@@ -80,6 +94,18 @@
         "tooltip" = true;
         "tooltip-format" = "<tt>{calendar}</tt>";
       };
+      "battery" = {
+          "states" = {
+              "good" = 95;
+              "warning" = 30;
+              "critical" = 20
+          };
+          "format" = "{icon} {capacity}%";
+          "format-charging" = " {capacity}%";
+          "format-plugged" = " {capacity}%";
+          "format-alt" = "{time} {icon}";
+          "format-icons" = ["󰂎" "󰁺" "󰁻" "󰁼" "󰁽" "󰁾" "󰁿" "󰂀" "󰂁" "󰂂" "󰁹"]
+      };
       "memory" = {
         "interval" = 1;
         "format" = "󰟜 {percentage}%";
@@ -93,8 +119,8 @@
       };
       "network" = {
         "interval" = 1;
-        "format" = "󰣺 Connected";
-        "format-alt" = "  {bandwidthUpBytes}    {bandwidthDownBytes}";
+        "format-alt" = "󰣺 Connected";
+        "format" = "  {bandwidthUpBytes}    {bandwidthDownBytes}";
         "format-disconnected" = "󰣼 Disconnected";
         "tooltip" = false;
       };
