@@ -55,6 +55,7 @@
     nix-zsh-completions # ZSH completions for Nix, NixOS, and NixOps
     gnupg # Modern release of the GNU Privacy Guard, a GPL OpenPGP implementation
     dmidecode # A tool that reads insformation about your system's hardware from the BIOS according to the SMBIOS/DMI standard
+    #evolution # Personal information management application that provides integrated mail, calendaring and address book
 
     # System Call Monitoring
     strace # A system call tracer for Linux
@@ -99,7 +100,7 @@
     mako # A lightweight Wayland notification daemon
     waybar # Highly customizable Wayland bar for Sway and Wlroots based compositors
     swaylock-effects # Screen locker for Wayland
-    xdg-desktop-portal-hyprland # xdg-desktop-portal backend for Hyprland
+    #xdg-desktop-portal-hyprland # xdg-desktop-portal backend for Hyprland
     swappy # A Wayland native snapshot editing tool, inspired by Snappy on macOS
     mpv # General-purpose media player, fork of MPlayer and mplayer2
     pamixer # Pulseaudio command line mixer
