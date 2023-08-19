@@ -59,8 +59,8 @@
             "2" = [];
             "3" = [];
             "4" = [];
-            "5" = []
-        }
+            "5" = [];
+        };
       };
       #"wlr/workspaces" = {
       #  "format" = "{icon}";
@@ -98,13 +98,13 @@
           "states" = {
               "good" = 95;
               "warning" = 30;
-              "critical" = 20
+              "critical" = 20;
           };
           "format" = "{icon} {capacity}%";
           "format-charging" = " {capacity}%";
           "format-plugged" = " {capacity}%";
           "format-alt" = "{time} {icon}";
-          "format-icons" = ["󰂎" "󰁺" "󰁻" "󰁼" "󰁽" "󰁾" "󰁿" "󰂀" "󰂁" "󰂂" "󰁹"]
+          "format-icons" = ["󰂎" "󰁺" "󰁻" "󰁼" "󰁽" "󰁾" "󰁿" "󰂀" "󰂁" "󰂂" "󰁹"];
       };
       "memory" = {
         "interval" = 1;
