@@ -51,16 +51,18 @@
       };
       "wlr/workspaces" = {
         "format" = "{icon}";
-        "disable-scroll" = true;
-        "all-outputs" = true;
         "on-click" = "activate";
-        "persistent_workspaces" = {
-            "1" = [];
-            "2" = [];
-            "3" = [];
-            "4" = [];
-            "5" = [];
+        "format-icons" = {
+          "1" = "";
+          "2" = "";
+          "3" = "";
+          "4" = "";
+          "5" = "";
+          "urgent" = "";
+          "active" = "";
+          "default" = ""
         };
+        "sort-by-number" = true;
       };
       #"wlr/workspaces" = {
       #  "format" = "{icon}";
