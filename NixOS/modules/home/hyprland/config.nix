@@ -26,44 +26,61 @@ in
       }
 
       misc {
-          disable_autoreload = true
+          disable_autoreload = false
           disable_hyprland_logo = true
           always_follow_on_dnd = true
           layers_hog_keyboard_focus = true
-          animate_manual_resizes = false
+          animate_manual_resizes = true
           enable_swallow = true
-          swallow_regex =
           focus_on_activate = true
+          vfr = true
+          vrr = 2
       }
 
 
       general {
+          layout = master
           gaps_in = 6
           gaps_out = 10
           border_size = 2
           col.active_border = rgba(595959ff)
           col.inactive_border = rgba(00140e10)
+          #col.active_border = rgb(b2b2ff) rgb(f5c2e7) rgb(70a5eb) 270deg
+          #bezier = linear, 0.0, 0.0, 1.0, 1.0
+          #animation = borderangle, 1, 100, linear, loop
+          
+          #col.active_border=0xfff5c2e7   # pink
+          #col.active_border=0xffb2b2ff   # purple
+          #col.active_border=0xff8cc1ff   # decayce
+          #col.active_border=0xffcdd6f4   # Catppuccin
+          #col.active_border=0xffb4befe   # Catppuccin mocha
+          #col.inactive_border=0xff1e1e2e
+          col.group_border_active=0xfff9e2af
+          col.group_border=0xff89dceb
           apply_sens_to_raw = 1
       }
 
 
       dwindle {
           no_gaps_when_only = false
-          force_split = 0
+          force_split = 2
           special_scale_factor = 0.8
           split_width_multiplier = 1.0
           use_active_for_splits = true
-          pseudotile = yes
-          preserve_split = yes
+          pseudotile = true
+          preserve_split = true
       }
 
 
       master {
           new_is_master = true
-          special_scale_factor = 1
+          special_scale_factor = 0.8
           no_gaps_when_only = false
       }
 
+      debug {
+          damage_tracking = 2 # leave it on 2 (full) unless you hate your GPU and want to make it suffer!
+      }
 
       decoration {
           # See https://wiki.hyprland.org/Configuring/Variables/ for more
@@ -84,13 +101,53 @@ in
           enabled = yes
       
           # Some default animations, see https://wiki.hyprland.org/Configuring/Animations/ for more
-          bezier = myBezier, 0.10, 0.9, 0.1, 1.05
-      
-          animation = windows, 1, 7, myBezier, slide
-          animation = windowsOut, 1, 7, myBezier, slide
-          animation = border, 1, 10, default
-          animation = fade, 1, 7, default
-          animation = workspaces, 1, 6, default
+          #bezier = myBezier, 0.10, 0.9, 0.1, 1.05
+          #animation = windows, 1, 7, myBezier, slide
+          #animation = windowsOut, 1, 7, myBezier, slide
+          #animation = border, 1, 10, default
+          #animation = fade, 1, 7, default
+          #animation = workspaces, 1, 6, default
+          
+          # Selmer443 config
+          bezier=pace,0.46, 1, 0.29, 0.99
+          bezier=overshot,0.13,0.99,0.29,1.1
+          bezier = md3_decel, 0.05, 0.7, 0.1, 1
+          animation=windowsIn,1,6,md3_decel,slide
+          animation=windowsOut,1,6,md3_decel,slide
+          animation=windowsMove,1,6,md3_decel,slide
+          animation=fade,1,10,md3_decel
+          animation=workspaces,1,7,md3_decel,slide
+          animation=specialWorkspace,1,8,md3_decel,slide
+          animation=border,1,10,md3_dece
+          
+          #  PROxZima animations
+          #  bezier = overshot, 0.13, 0.99, 0.29, 1.1
+          #  animation = windows, 1, 4, overshot, slide
+          #  animation = border, 1, 10, default
+          #  animation = fade, 1, 10, default
+          #  animation = workspaces, 1, 6, overshot, slidever
+          
+          #  Caue's config
+          # bezier = in, 0.5, 1.2, 0.4, 1
+          # bezier = wss, 0.5, 1.15, 0.4, 1
+          # bezier = fader, 0.33, 1, 0.68, 1
+          # bezier = out, 0, 1, 0.6, 1
+          # animation = windows, 1, 4, in
+          # animation = border, 1, 10, default
+          # animation = fade, 1, 7, fader
+          # animation = workspaces, 1, 5, wss, slid
+          
+          #  Chris Titus config
+          #  bezier = overshot, 0.05, 0.9, 0.1, 1.05
+          #  bezier = smoothOut, 0.36, 0, 0.66, -0.56
+          #  bezier = smoothIn, 0.25, 1, 0.5, 1
+          #  animation = windows, 1, 5, overshot, slide
+          #  animation = windowsOut, 1, 4, smoothOut, slide
+          #  animation = windowsMove, 1, 4, default
+          #  animation = border, 1, 10, default
+          #  animation = fade, 1, 10, smoothIn
+          #  animation = fadeDim, 1, 10, smoothIn
+          #  animation = workspaces, 1, 6, default
       }
       
       device:epic mouse V1 {
@@ -112,7 +169,7 @@ in
       bind = ALT, V, exec, cliphist list | wofi -dmenu | cliphist decode | wl-copy # open clipboard manager
       
       # screenshot
-      bind = ,Print, exec, grimblast --notify --cursor save area ~/Pictures/$(date ' + %Y-%m-%d ' T '%H:%M:%S ').png
+      bind = ,Print, exec, grimblast --notify --cursor save area ~/Images/$(date ' + %Y-%m-%d ' T '%H:%M:%S ').png
       bind = $mainMod, Print, exec, grimblast --notify --cursor  copy area
       
       # switch focus
@@ -207,6 +264,7 @@ in
       windowrulev2 = opacity 0.8 0.8,class:^(thunar)$
       windowrulev2 = opacity 0.8 0.8,class:^(VSCodium)$
       windowrulev2 = animation popin,class:^(chromium)$
+      windowrulev2 = opacity 0.8 0.8,class:^(chromium)$
       windowrulev2 = move cursor -3% -105%,class:^(wofi)$
       windowrulev2 = noanim,class:^(wofi)$
       windowrulev2 = opacity 0.8 0.6,class:^(wofi)$
