@@ -101,24 +101,24 @@ in
           enabled = yes
       
           # Some default animations, see https://wiki.hyprland.org/Configuring/Animations/ for more
-          #bezier = myBezier, 0.10, 0.9, 0.1, 1.05
-          #animation = windows, 1, 7, myBezier, slide
-          #animation = windowsOut, 1, 7, myBezier, slide
-          #animation = border, 1, 10, default
-          #animation = fade, 1, 7, default
-          #animation = workspaces, 1, 6, default
+          bezier = myBezier, 0.10, 0.9, 0.1, 1.05
+          animation = windows, 1, 7, myBezier, slide
+          animation = windowsOut, 1, 7, myBezier, slide
+          animation = border, 1, 10, default
+          animation = fade, 1, 7, default
+          animation = workspaces, 1, 6, default
           
           # Selmer443 config
-          bezier=pace,0.46, 1, 0.29, 0.99
-          bezier=overshot,0.13,0.99,0.29,1.1
-          bezier = md3_decel, 0.05, 0.7, 0.1, 1
-          animation=windowsIn,1,6,md3_decel,slide
-          animation=windowsOut,1,6,md3_decel,slide
-          animation=windowsMove,1,6,md3_decel,slide
-          animation=fade,1,10,md3_decel
-          animation=workspaces,1,7,md3_decel,slide
-          animation=specialWorkspace,1,8,md3_decel,slide
-          animation=border,1,10,md3_dece
+          #bezier=pace,0.46, 1, 0.29, 0.99
+          #bezier=overshot,0.13,0.99,0.29,1.1
+          #bezier = md3_decel, 0.05, 0.7, 0.1, 1
+          #animation=windowsIn,1,6,md3_decel,slide
+          #animation=windowsOut,1,6,md3_decel,slide
+          #animation=windowsMove,1,6,md3_decel,slide
+          #animation=fade,1,10,md3_decel
+          #animation=workspaces,1,7,md3_decel,slide
+          #animation=specialWorkspace,1,8,md3_decel,slide
+          #animation=border,1,10,md3_dece
           
           #  PROxZima animations
           #  bezier = overshot, 0.13, 0.99, 0.29, 1.1
