@@ -12,6 +12,6 @@
     ++ [ (import ./gtk) ]
     ++ [ (import ./mako) ]
     ++ [ (import ./starship) ]
-    ++ [ (import ./wlogout) ]
-    ++ [ (import ./blueman) ];
+    ++ [ (import ./wlogout) ];
+    #++ [ (import ./blueman) ];
 }

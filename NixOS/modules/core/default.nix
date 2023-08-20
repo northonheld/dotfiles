@@ -18,6 +18,6 @@ in
       ++ [ (import ./user.nix) ]
       ++ [ (import ./configuration.nix) ]
       ++ [ (import ./pkgs-config.nix) ]
-    ;
+      ++ [ (import ./blueman) ];
   };
 }
