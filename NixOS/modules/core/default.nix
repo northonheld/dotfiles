@@ -17,7 +17,7 @@ in
       ++ [ (import ./network-config.nix) ]
       ++ [ (import ./user.nix) ]
       ++ [ (import ./configuration.nix) ]
-      ++ [ (import ./pkgs-config.nix) ]
-      ++ [ (import ./blueman) ];
+      ++ [ (import ./pkgs-config.nix) ];
+      #++ [ (import ./blueman) ];
   };
 }
