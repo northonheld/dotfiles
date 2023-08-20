@@ -60,9 +60,10 @@
           "5" = "";
           "urgent" = "";
           "active" = "";
-          "default" = ""
+          "default" = "";
         };
         "sort-by-number" = true;
+	"active-only" = false;
       };
       #"wlr/workspaces" = {
       #  "format" = "{icon}";

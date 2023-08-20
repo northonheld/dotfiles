@@ -26,7 +26,13 @@
   systemd.tmpfiles.rules =
   [
     "d /home/notheld/Data 700 notheld"
-  ] ;
+    #"d /home/notheld/Imagens/backgrouns 700 notheld"
+  ];
+
+  #systemd.tmpfiles.rules =
+  #[
+  #  "d /home/notheld/Imagens/backgrounds 700 notheld"
+  #] ;
 
   fileSystems."/home/notheld/Data" = {
       device = "192.168.15.6:/mnt/tank/my-data";
