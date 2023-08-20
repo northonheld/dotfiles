@@ -215,15 +215,16 @@ in
       
       
       # autostart
-      
+      exec-once = ~/.config/hypr/xdg-portal-hyprland 
       exec-once = dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
       exec-once = systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
-      exec-once = swww init && swaylock && notify-send 'Hey $USER, Welcome back' && load-env 
+      exec-once = swww init && swaylock && notify-send 'Hey $USER, Welcome back' && load-env
       exec-once = wl-paste --type text --watch cliphist store && wl-paste --type image --watch cliphist store
       exec-once = mako
       exec-once = blueman-applet
       exec-once = nm-applet --indicator
-      exec = waybar 
+      exec = waybar
+      exec = ~/.config/hypr/hypr_util
     ";
   };
 }

@@ -56,6 +56,7 @@
     gnupg # Modern release of the GNU Privacy Guard, a GPL OpenPGP implementation
     dmidecode # A tool that reads insformation about your system's hardware from the BIOS according to the SMBIOS/DMI standard
     #evolution # Personal information management application that provides integrated mail, calendaring and address book
+    bash
 
     # System Call Monitoring
     strace # A system call tracer for Linux
