@@ -14,12 +14,12 @@ in {
   };
 
   ###### implementation
-  config = mkIf cfg.enable {
-
-    environment.systemPackages = [ pkgs.blueman ];
-
-    services.dbus.packages = [ pkgs.blueman ];
-
-    systemd.packages = [ pkgs.blueman ];
-  };
+  #config = mkIf cfg.enable {
+  # 
+  #  environment.systemPackages = [ pkgs.blueman ];
+  # 
+  #  services.dbus.packages = [ pkgs.blueman ];
+  # 
+  #  systemd.packages = [ pkgs.blueman ];
+  #};
 }
