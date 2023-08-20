@@ -127,8 +127,7 @@
   system.stateVersion = "23.05"; # Did you read the comment?
   
   # Hyprland
-  # programs.hyprland.enable = true;
-  programs.hyprland.enable = true;
+  #programs.hyprland.enable = true;
   
   security.polkit.enable = true;
   systemd = {
